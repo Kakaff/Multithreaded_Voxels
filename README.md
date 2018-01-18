@@ -1,5 +1,9 @@
 # Multithreaded Voxels
 
+![Alt Text](https://i.imgur.com/oS9aJRo.gif)
+
+#### 11.468.800 Blocks (2800 Chunks) being generated and drawn in realtime.
+
 Requires the player to be set to the experimental .net 4.6 version.
 
 An experiment in creating a multithreaded minecraft esque "game" using Unity.
@@ -17,3 +21,15 @@ To move around attach the Player monobehaviour to the maincamera, to add mouselo
 
 
 The project is currently on hold due to memory leaking issues which seem related to how unity's garbage collector works. (This could possibly be fixed however by reusing the subchunks similarly to entitypooling). It also lacks any form of compression so a decent amount of ram is recommended.
+
+## Performance Comparision
+Here are some gifs showing the speed of the world generation at different threadcounts.
+The threadcount specified in the gif is the number of workerthreads.
+
+All samples are run with 11.468.800 blocks (2800 chunks)
+
+![Alt Text](https://i.imgur.com/ISlTHo7.gif)
+![Alt Text](https://i.imgur.com/L31ypco.gif)
+![Alt Text](https://i.imgur.com/wjSD6fw.gif)
+![Alt Text](https://i.imgur.com/oS9aJRo.gif)
+![Alt Text](https://i.imgur.com/M6YSGc1.gif)
