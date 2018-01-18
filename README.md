@@ -22,7 +22,7 @@ To move around attach the Player monobehaviour to the maincamera, to add mouselo
 
 The project is currently on hold due to memory leaking issues which seem related to how unity's garbage collector works. (This could possibly be fixed however by reusing the subchunks similarly to entitypooling). It also lacks any form of compression so a decent amount of ram is recommended.
 
-## Performance Comparision
+## Performance Comparison
 Here are some gifs showing the speed of the world generation at different threadcounts.
 The threadcount specified in the gif is the number of workerthreads.
 
